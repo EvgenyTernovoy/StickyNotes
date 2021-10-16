@@ -1,4 +1,4 @@
-## What you can do in app
+## What functionality is available in the application
 
 1. Create a new note of the specified size at the specified position and specified text.
 2. Change note width by dragging.
@@ -20,9 +20,9 @@ App sliced on layers. There are three levels of layers.
     Entities: `src/models`
 
 
-* Second layer is application layer which contains useCases.
+* The second layer is application layer which contains useCases.
 
-  The use cases are the processes that can be triggered in our application core by user Interfaces.
+  The use cases are the processes that can be triggered in our application core by user interfaces.
 
   Use case includes logic which can use our domain logic and invoke needed side effects, 
 e.g. save data to storage or invoke some external api.
@@ -31,7 +31,7 @@ A common case is to use it for some event handlers.
   Entities: `src/useCases`
 
 
-* Third layer is layer of external services. There are located our storage, UI library and e.g. REST API.
+* The third layer is layer of external services. There are located our storage, UI library and e.g. REST API.
 
   Entities: 
 
@@ -47,8 +47,8 @@ Also, we use simple DI. When we initialize our app we pass needed services into 
     this.UI = new UI(this.storage, this.useCases)
 ```
 
-Actually for use all power this architecture we should use TypeScript and its interfaces. 
+Actually for use all power of the architecture we should use TypeScript and its interfaces. 
 
-Following this approach we would have less coupling and more cohesion.
+By following this approach we would have less coupling and more cohesion.
 
-Also, we can separate our files in different way, e.g. separate it by features. 
+For clarity, the files are divided into layers, but a more efficient way is to divide them by function.
