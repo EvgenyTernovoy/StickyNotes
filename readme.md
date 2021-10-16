@@ -1,12 +1,12 @@
 # App description
 
-##How to start app
+## How to start app
 You should just install deps and start bundler
 
 * npm install
 * npm start
 
-##Architecture description
+## Architecture description
 
 App sliced on layers. There are three levels of layers.
 
