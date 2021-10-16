@@ -1,3 +1,9 @@
+## What you can do in app
+
+1. Create a new note of the specified size at the specified position and specified text.
+2. Change note width by dragging.
+3. Remove a note by dragging it over a predefined "trash" zone.
+
 ## How to start app
 You should just install deps and start bundler
 
