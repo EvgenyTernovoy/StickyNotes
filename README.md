@@ -52,3 +52,5 @@ Actually for use all power of the architecture we should use TypeScript and its 
 By following this approach we would have less coupling and more cohesion.
 
 For clarity, the files are divided into layers, but a more efficient way is to divide them by features.
+
+Feel free to leave a comment about architecture at [issues](https://github.com/EvgenyTernovoy/StickyNotes/issues) 
