@@ -41,8 +41,8 @@ Also, we use simple DI. When we initialize our app we pass needed services into 
     this.UI = new UI(this.storage, this.useCases)
 ```
 
-Actually for use all power this architecture we should use TypeScript and their interfaces. 
+Actually for use all power this architecture we should use TypeScript and its interfaces. 
 
 Following this approach we would have less coupling and more cohesion.
 
-Also, we can separate our file in different way, e.g. separate it by features. 
+Also, we can separate our files in different way, e.g. separate it by features. 
