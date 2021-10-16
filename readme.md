@@ -1,5 +1,3 @@
-# App description
-
 ## How to start app
 You should just install deps and start bundler
 
