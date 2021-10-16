@@ -39,6 +39,10 @@ A common case is to use it for some event handlers.
   `src/services`
 
 
+  Our domain layer and use cases know nothing about how and who would be use it. 
+  We have the storage for communicating between UI and models. The storage implements observable pattern,
+  when something change in the model all subscribers notifying about it and e.g. UI updates needed nodes.   
+
 Also, we use simple DI. When we initialize our app we pass needed services into constructor:
 
 ```
