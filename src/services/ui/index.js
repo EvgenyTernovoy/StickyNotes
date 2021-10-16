@@ -2,6 +2,9 @@ import {newCard} from '@/services/ui/components'
 import {CONTAINER_IDS} from '@/constants'
 import {STORAGE_EVENTS} from '@/storage'
 
+/*
+  All UI logic is here, but it's better to separate it by components
+ */
 class UIService {
   $cardList
   $trash
