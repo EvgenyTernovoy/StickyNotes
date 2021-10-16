@@ -1,0 +1,52 @@
+.add-card-container {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 100px;
+
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.add-card-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  background: #0065ff;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 60px;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

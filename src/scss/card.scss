@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  background: #fff;
+  cursor: move;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  border-radius: 5px;
+  box-sizing: content-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.card-width-drag {
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 13px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: col-resize;
+}

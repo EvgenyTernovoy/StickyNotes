@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import "cardList";
+@import "trash";
+@import "card";
+@import "addCard";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #888;
+  height: 100vh;
+  max-width: 100%;
+  font-size: .8rem;
+}
+
+

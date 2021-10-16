@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Sticky notes</title>
+</head>
+<body>
+<div id="app" class="app">
+    <form class="add-card-container" id="add-card-form">
+        <div class="inputs-wrapper">
+            <label class="input-wrapper" >
+                <span>Width:</span>
+                <input type="number" name="width" id="input-width" min="0" max="200">
+            </label>
+            <label class="input-wrapper">
+                <span>Height:</span>
+                <input type="number" name="height" id="input-height" min="0"  max="200">
+            </label>
+            <label class="input-wrapper">
+                <span>Order:</span>
+                <input type="number" name="order" id="input-order" min="0">
+            </label>
+            <label class="input-wrapper">
+                <span>Text:</span>
+                <input type="text" name="text" id="input-text">
+            </label>
+        </div>
+
+        <button class="add-card-button">add card</button>
+    </form>
+
+    <div class="card-list" id="card-list">
+   <!--     <div class="card" id="card" draggable="true">Crad</div>-->
+    </div>
+
+    <div class="trash" id="trash">
+        Trash
+    </div>
+</div>
+</body>
+</html>
