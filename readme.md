@@ -27,10 +27,10 @@ A common case is to use it for some event handlers.
 
 * Third layer is layer of external services. There are located our storage, UI library and e.g. REST API.
 
-Entities: 
+  Entities: 
 
-`src/storage`
-`src/services`
+  `src/storage`
+  `src/services`
 
 
 Also, we use simple DI. When we initialize our app we pass needed services into constructor:
