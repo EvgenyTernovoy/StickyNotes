@@ -8,8 +8,8 @@ const CARD_MODEL = {
 
 export function createCard(width, height, text) {
   return {
-    width: width || CARD_MODEL.width,
-    height: height || CARD_MODEL.height,
+    width: Number(width) || CARD_MODEL.width,
+    height: Number(height) || CARD_MODEL.height,
     id: `${Date.now()}`,
     value: text || CARD_MODEL.value,
   }

@@ -22,7 +22,7 @@ class UIService {
     this.init = this.init.bind(this)
     this.trashDropHandler = this.trashDropHandler.bind(this)
     this.onAddFormSubmit = this.onAddFormSubmit.bind(this)
-    this.renderCard = this.renderCard.bind(this)
+    this.updateCard = this.updateCard.bind(this)
     this.cardWidthDragStart = this.cardWidthDragStart.bind(this)
   }
 
@@ -40,9 +40,10 @@ class UIService {
         })
   }
 
-  renderCard({cardId}) {
+  updateCard({cardId}) {
     const card = document.getElementById(cardId)
     const cardModel = this.storage.getCardById(cardId)
+
     card.style.width = `${cardModel.width}px`
   }
 
@@ -50,7 +51,7 @@ class UIService {
     ev.preventDefault();
 
     const id = ev.dataTransfer.getData('application/card');
-    this.storage.removeCardFormList(id)
+    this.storage.removeCardFromList(id)
   }
 
   trashDragOverHandler(ev) {
@@ -118,7 +119,7 @@ class UIService {
     this.$addForm.addEventListener('submit', this.onAddFormSubmit)
 
     this.storage.subscribe(STORAGE_EVENTS.listUpdated, this.renderList)
-    this.storage.subscribe(STORAGE_EVENTS.cardUpdated, this.renderCard)
+    this.storage.subscribe(STORAGE_EVENTS.cardUpdated, this.updateCard)
   }
 }
 

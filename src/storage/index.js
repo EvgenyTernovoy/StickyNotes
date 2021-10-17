@@ -5,6 +5,12 @@ export const STORAGE_EVENTS = {
   cardUpdated: 'cardUpdated',
 }
 
+/**
+  It's simple realization of storage with observable pattern.
+  It's not production ready approach,
+  it's just a demonstration of what it might look like.
+ **/
+
 class Storage {
   storage
   subscribes
@@ -15,7 +21,7 @@ class Storage {
     }
     this.subscribes = {}
 
-    this.removeCardFormList = this.removeCardFormList.bind(this)
+    this.removeCardFromList = this.removeCardFromList.bind(this)
   }
 
   updateList(newList) {
@@ -36,7 +42,7 @@ class Storage {
     this.fireEvent(STORAGE_EVENTS.cardUpdated, {cardId: id})
   }
 
-  removeCardFormList(cardId) {
+  removeCardFromList(cardId) {
     const newList = this.storage.cardList.filter(item => item.id !== cardId)
     this.updateList(newList)
   }
